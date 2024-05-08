@@ -113,10 +113,9 @@ export const IconT = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="288"
-      height="91"
       viewBox="0 0 288 91"
       fill="none"
+      className="w-[102px] h-[38px] md:w-[288px] md:h-[91px]"
     >
       <path
         fill-rule="evenodd"
