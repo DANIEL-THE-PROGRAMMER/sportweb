@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const BestSeller = () => {
   return (
-    <div className="pt-[103px] pb-[130px]">
+    <div className="pt-[32px] ms:pt-[103px] pb-[130px]">
       <div className="container mx-auto flex flex-col gap-[40px]">
         <h3 className="text-[42px] text-[#000]">Best sellers</h3>
         <div className="w-full flex gap-[35px]">

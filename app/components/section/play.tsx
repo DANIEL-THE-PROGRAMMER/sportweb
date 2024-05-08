@@ -3,7 +3,7 @@ import Image from "next/image";
 export const Play = () => {
   return (
     <div className="relative flex justify-between flex-col md:min-h-[155vh]">
-      <div className="absolute w-[50%] top-[-30px] right-0">
+      <div className="absolute w-[50%] top-[60px] md:top-[-30px] right-0">
         <div className="relative w-full">
           <Image
             src="/assets/image 11.png"
@@ -21,35 +21,35 @@ export const Play = () => {
           />
         </div>
       </div>
-      <div className="container mx-auto pt-[67px] relative">
-        <div className="w-[70%] flex relative">
-          <div className="absolute w-full h-[655px] top-[50%]">
-            <div className="relative h-full w-[55%]">
+      <div className="container mx-auto pt-[20px] md:pt-[67px] relative">
+        <div className="w-[95%] mx-auto md:mx-0 md:w-[70%] flex relative">
+          <div className="absolute left-[-55px] md:left-0 w-full h-[225px] md:h-[655px] top-[50%]">
+            <div className="relative h-full w-[191px] md:w-[55%]">
               <Image src="/assets/image 14.png" alt="" fill sizes="100vw" />
             </div>
           </div>
           <div className="relative w-full h-full z-0 flex justify-center items-center">
-            <div className="relative h-[320px] w-[320px]">
+            <div className="relative h-[108px] md:h-[320px] w-[108px] md:w-[320px]">
               <Image src="/assets/&.png" alt="" fill sizes="100vw" />
             </div>
           </div>
-          <div className="absolute w-full h-full flex z-10  pt-[40px] pb-[40px] flex-col justify-between">
+          <div className="absolute w-full h-full flex z-10  md:pt-[40px] pb-[40px] flex-col justify-between">
             <div className="">
-              <span className="leading-[117.819px] text-[98.183px]">
+              <span className="md:leading-[117.819px] text-[34px] md:text-[98.183px]">
                 Play together
               </span>
             </div>
             <div className="flex justify-end">
-              <span className="text-[71.841px] text-[#222] leading-[86.269px]">
+              <span className="text-[25px] md:text-[71.841px] text-[#222] md:leading-[86.269px]">
                 Don{"'"}t be limited
               </span>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-[90.66px] container mx-auto  p-[40px] flex flex-col">
+      <div className="mt-[90.66px] md:container w-[95%] mx-auto  md:p-[40px] flex flex-col md:pt-0 pt-[200px] md:px-0">
         <div className="flex items-center">
-          <span className="text-[42px]">At</span>
+          <span className="text-[24px] md:text-[42px]">At</span>
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +57,7 @@ export const Play = () => {
               height="73"
               viewBox="0 0 194 73"
               fill="none"
+              className="w-[111px] h-[42px] md:w-[194px] md:h-[73px]"
             >
               <path
                 fill-rule="evenodd"
@@ -80,13 +81,26 @@ export const Play = () => {
             </svg>
           </span>
         </div>
-        <div className="flex flex-col text-[#6D6D6D] text-[30px] leading-[40px] pt-[18px] pb-[40px]">
-          <span>We focus on women{"'"}s sports and believe</span>
-          <span>that comfortable and beautiful sports</span>
-          <span>equipment will help you be happier and</span>
-          <span>more confident.</span>
+        <div className="flex flex-col text-[#6D6D6D] text-[22px] md:text-[30px] md:leading-[40px] leading-[22px]  pt-[18px] pb-[40px]">
+          <span className="hidden md:inline-block">
+            We focus on women{"'"}s sports and believe
+          </span>
+          <span className="hidden md:inline-block">
+            that comfortable and beautiful sports
+          </span>
+          <span className="hidden md:inline-block">
+            equipment will help you be happier and
+          </span>
+          <span className="hidden md:inline-block">more confident.</span>
+          <span className="md:hidden inline-block">
+            We focus on women{"'"}s sports and believe that comfortable and
+            beautiful sports equipment will help you be happier and more
+            confident.
+          </span>
         </div>
-        <span className="text-[20px] leading-[36px] underline linkclip uppercase">Learn More</span>
+        <span className="text-[12px] md:text-[20px] leading-[22px] md:leading-[36px] underline linkclip uppercase">
+          Learn More
+        </span>
       </div>
     </div>
   );
