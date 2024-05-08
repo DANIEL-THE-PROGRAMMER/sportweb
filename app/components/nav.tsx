@@ -1,11 +1,14 @@
 import Link from "next/link";
-import { Bag, Profile, Search } from "./icons";
+import { Bag, Hamburger, Profile, Search } from "./icons";
 
 export const Nav = () => {
   return (
-    <div className="md:h-[69px] navbg flex justify-stretch absolute top-0 left-0 w-full z-10">
-      <div className="mx-auto container flex items-center justify-between">
-        <ul className="flex gap-[20px] items-center font-medium text-[16px]">
+    <div className="md:h-[69px] md:py-0 py-[8px]  navbg flex justify-stretch relative md:absolute top-0 left-0 w-full z-10 bg-white md:bg-[rgba(255,255,255,0.22)]">
+      <div className="mx-auto container flex items-center justify-between md:w-full w-[95%] ">
+        <div className="md:hidden flex items-center justify-center">
+          <Hamburger />
+        </div>
+        <ul className="hidden md:flex gap-[20px] items-center font-medium text-[16px]">
           <li>
             <Link href="" className="text-[#222]">
               Shop
@@ -22,7 +25,7 @@ export const Nav = () => {
             </Link>
           </li>
         </ul>
-        <div className="">
+        <div className="md:grow-0 flex grow justify-end md:mr-0 mr-[40px] mb-[5px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="98"
@@ -38,7 +41,7 @@ export const Nav = () => {
             />
           </svg>
         </div>
-        <div className="flex gap-[20px] items-center w-[239px] justify-end">
+        <div className="flex gap-[20px] items-center w-[134px] md:w-[239px] justify-end">
           <Search />
           <Bag />
           <Profile />

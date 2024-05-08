@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export const Header = () => {
   return (
-    <div className="min-h-[100vh] w-full">
+    <div className="md:min-h-[100vh] min-h-[234px] w-full relative">
+        <Image src="/assets/herom.png" alt="" fill={true} sizes="100vw" className="md:hidden flex" />
       <Image
         src="/assets/hero.png"
         alt=""
@@ -16,12 +17,12 @@ export const Header = () => {
           objectFit: "cover",
         }}
         sizes="100vw"
-        className="z-0"
+        className="z-0 hidden md:block"
       />
       <div className="absolute w-full h-full left-0 top-0">
         <div className="relative z-10">
           <div className="container mx-auto w-full h-full ">
-            <div className="flex mt-[27.6%] flex-col">
+            <div className="hidden md:flex mt-[27.6%] flex-col">
               <h3 className="text-[#222] text-[50px]">New Series</h3>
               <p className="text-[30px] text-[#222]">
                 Quick-drying sports undershirt
