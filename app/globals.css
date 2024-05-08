@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbg {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(15px);
+}
+
+.linkclip {
+  background: linear-gradient(96deg, #aade93 -0.21%, #b8c53d 100.24%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
